@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Only allow your Next.js frontend
+  origin: ['http://localhost:3000','https://importcsv44.vercel.app/',''https://importcsv44-evunnq6j6-sankalp0vercel.app'], // Only allow your Next.js frontend
   methods: ['GET', 'POST'],
 }));
 app.use(express.json());

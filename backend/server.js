@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000','https://importcsv44.vercel.app/'], 
+  origin: ['http://localhost:3000','https://importcsv44.vercel.app'], 
   methods: ['GET', 'POST'],
 }));
 app.use(express.json());

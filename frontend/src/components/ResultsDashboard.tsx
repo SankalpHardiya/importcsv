@@ -233,7 +233,7 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
         <Card className="border-border">
           <CardHeader className="flex flex-row items-center justify-between">
             <CardTitle className="text-foreground">Mapped Records</CardTitle>
-            <Select onValueChange={setFilter} defaultValue="all">
+           <Select onValueChange={(value) => setFilter(value ?? "all")} defaultValue="all">
               <SelectTrigger className="w-[220px] bg-secondary border-border text-foreground">
                 <SelectValue placeholder="Filter by Status" />
               </SelectTrigger>
